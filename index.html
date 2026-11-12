@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Collins Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <span class="brand-mark" data-fill="initials">YN</span>
+      <span data-fill="name">Your Name</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <button class="icon-btn" id="theme" type="button" aria-label="Switch colour theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      </button>
+      <a class="btn small" href="#contact">Hire me</a>
+    </div>
+  </div>
+</header>
+
+<main class="container" id="top">
+  <div class="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="status rise"><span class="dot"></span><span class="label">Computer engineer · Taking new projects</span></div>
+        <h1 class="rise">Websites built to hold up <em>under pressure.</em></h1>
+        <p class="role rise">Hi, I'm Collins, a <span id="typed">computer engineer</span><i class="caret" aria-hidden="true"></i></p>
+        <p class="lead rise">I design and build fast, clean websites and online stores for businesses that want to be found, trusted and chosen. Every page is checked twice before it goes live.</p>
+        <div class="hero-cta rise">
+          <a class="btn" href="#contact">Start a project <span class="arrow">→</span></a>
+          <a class="btn ghost" href="#skills">See what I work with</a>
+        </div>
+      </div>
+      <div class="portrait-wrap rise">
+        <div class="sonar" aria-hidden="true"><i></i><i></i><i></i></div>
+        <span class="chip a"><b>&lt;/&gt;</b> Next.js developer</span>
+        <span class="chip b"><b>●</b> Open for projects</span>
+        <div class="portrait">
+          <div class="portrait-inner">
+            <!-- ===== YOUR PHOTO =====
+                 Save your picture in this same folder as collins.jpg
+                 (or change the name in src below, e.g. src="my-photo.png"). -->
+            <img id="photo" src="Collins.jpeg" alt="Portrait of Collins">
+            <div class="placeholder" id="photo-empty">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="4"/><path d="M4 21c.8-4.2 4-6.5 8-6.5s7.2 2.3 8 6.5"/></svg>
+              <strong>Your photo goes here</strong>
+              <small>Use a clear, well-lit portrait.</small>
+              <button class="btn small" type="button" id="photo-btn">Add my photo</button>
+            </div>
+          </div>
+        </div>
+        <input type="file" id="photo-input" accept="image/*" hidden>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="section-head">
+      <span class="label">About me</span>
+      <h2>An engineer first, a web developer by choice.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="prose">
+        <p>I'm Collins, a <strong>computer engineer</strong> who builds websites. Engineering trained me to think in systems: how the pieces connect, where things break and how to make them reliable. I bring that same precision to every website I build.</p>
+        <p>Today I build company websites, portfolios, landing pages and online stores for businesses and individuals. Each project starts with a simple conversation: what do you sell, who needs to find you, and what should they do when they arrive? Then I design, build and launch a site that looks sharp on any phone and loads quickly.</p>
+        <p>I care about the details people feel but rarely name: the spacing that makes a page easy to read, the load time that keeps a visitor from leaving, the button that sits exactly where a thumb expects it.</p>
+        <p>I have built Next.js storefronts for phones and cybersecurity products, so I understand what it takes to turn visitors into customers.</p>
+      </div>
+      <div class="principles">
+        <div class="sheet">
+          <div class="sheet-head"><span class="label">Profile</span><span class="label">2026</span></div>
+          <dl>
+            <div class="row"><dt>Name</dt><dd data-fill="name">Collins</dd></div>
+            <div class="row"><dt>Discipline</dt><dd>Computer engineering</dd></div>
+            <div class="row"><dt>Builds</dt><dd>Websites and online stores</dd></div>
+            <div class="row"><dt>Stack</dt><dd>HTML · CSS · JavaScript · Next.js</dd></div>
+            <div class="row"><dt>Approach</dt><dd>Mobile-first, tested on real screens</dd></div>
+            <div class="row"><dt>Status</dt><dd>Open for new work</dd></div>
+          </dl>
+        </div>
+        <div class="principle"><h3>Measure twice, launch once</h3><p>Every page is tested on phone, tablet and desktop before you see the final version.</p></div>
+        <div class="principle"><h3>Built for phones first</h3><p>Most of your visitors will arrive on a phone, so that is where I start designing.</p></div>
+        <div class="principle"><h3>Plain, steady communication</h3><p>You always know what is done, what is next and when it will be ready. No jargon, no disappearing.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-head">
+      <span class="label">Skills</span>
+      <h2>The tools I build with.</h2>
+      <p>Hover a card to reveal my level. Tap it to push the number up.</p>
+    </div>
+    <div class="skills-grid">
+      <article class="skill" style="--lvl: 95%"><div class="skill-top"><h3>HTML5</h3><span class="pct"><span class="num">95</span>%</span></div><p>Semantic, accessible markup that search engines and screen readers both understand.</p><div class="meter"><i></i></div></article>
+      <article class="skill" style="--lvl: 92%"><div class="skill-top"><h3>CSS</h3><span class="pct"><span class="num">92</span>%</span></div><p>Grid, flexbox, animation and theming. Layouts that hold from a phone to a widescreen.</p><div class="meter"><i></i></div></article>
+      <article class="skill" style="--lvl: 88%"><div class="skill-top"><h3>JavaScript</h3><span class="pct"><span class="num">88</span>%</span></div><p>Interactive features, forms and dynamic pages without the bloat.</p><div class="meter"><i></i></div></article>
+      <article class="skill" style="--lvl: 84%"><div class="skill-top"><h3>React &amp; Next.js</h3><span class="pct"><span class="num">84</span>%</span></div><p>Fast, component-based sites and storefronts that are easy to grow.</p><div class="meter"><i></i></div></article>
+      <article class="skill" style="--lvl: 94%"><div class="skill-top"><h3>Responsive design</h3><span class="pct"><span class="num">94</span>%</span></div><p>Every page checked at phone, tablet and desktop widths.</p><div class="meter"><i></i></div></article>
+      <article class="skill" style="--lvl: 80%"><div class="skill-top"><h3>E-commerce</h3><span class="pct"><span class="num">80</span>%</span></div><p>Product pages and storefronts that make buying simple.</p><div class="meter"><i></i></div></article>
+      <article class="skill" style="--lvl: 85%"><div class="skill-top"><h3>UI design</h3><span class="pct"><span class="num">85</span>%</span></div><p>Clear hierarchy, readable type and calm colour that guide visitors to act.</p><div class="meter"><i></i></div></article>
+      <article class="skill" style="--lvl: 82%"><div class="skill-top"><h3>Speed &amp; SEO</h3><span class="pct"><span class="num">82</span>%</span></div><p>Lean pages that load quickly and are easier for customers to find.</p><div class="meter"><i></i></div></article>
+      <article class="skill" style="--lvl: 86%"><div class="skill-top"><h3>Git &amp; deployment</h3><span class="pct"><span class="num">86</span>%</span></div><p>Version control, clean handover and getting your site live.</p><div class="meter"><i></i></div></article>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="section-head">
+      <span class="label">Selected work</span>
+      <h2>Stores and storefronts I have built.</h2>
+    </div>
+    <div class="work-grid">
+      <article class="project">
+        <span class="code">NEXUSSTORE</span>
+        <h3>NexusStore</h3>
+        <p>An online phone store built with Next.js, with a product catalogue designed for quick browsing on any screen.</p>
+        <div class="tags"><span>Next.js</span><span>E-commerce</span><span>Responsive</span></div>
+      </article>
+      <article class="project">
+        <span class="code">SECVAULT</span>
+        <h3>SecVault</h3>
+        <p>A storefront for cybersecurity products built with Next.js, with a clear, trustworthy layout for security buyers.</p>
+        <div class="tags"><span>Next.js</span><span>Storefront</span><span>UI design</span></div>
+      </article>
+    </div>
+    <div class="stats" aria-label="Numbers">
+      <article class="stat" data-stat="orders"><span class="stat-num"><span class="num">12</span>+</span><span class="stat-label">Orders delivered</span><span class="hint"><span class="hint-hover">Hover to reveal · tap to add</span><span class="hint-touch">Tap to add</span></span></article>
+      <article class="stat" data-stat="websites"><span class="stat-num"><span class="num">8</span>+</span><span class="stat-label">Websites launched</span><span class="hint"><span class="hint-hover">Hover to reveal · tap to add</span><span class="hint-touch">Tap to add</span></span></article>
+      <article class="stat" data-stat="clients"><span class="stat-num"><span class="num">10</span>+</span><span class="stat-label">Happy clients</span><span class="hint"><span class="hint-hover">Hover to reveal · tap to add</span><span class="hint-touch">Tap to add</span></span></article>
+    </div>
+    <div class="services">
+      <div class="service"><h3>Business websites</h3><p>Show who you are and make it easy to get in touch.</p></div>
+      <div class="service"><h3>Online stores</h3><p>Sell products with a smooth path from browsing to buying.</p></div>
+      <div class="service"><h3>Portfolios &amp; landing pages</h3><p>One focused page that turns visitors into enquiries.</p></div>
+      <div class="service"><h3>Redesigns</h3><p>Make an old site faster, cleaner and mobile friendly.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-grid">
+      <div>
+        <div class="section-head" style="margin-bottom: 0">
+          <span class="label">Contact me</span>
+          <h2>Need a website? Tell me about it.</h2>
+          <p>Describe what you want to build and I will reply with the next steps. No pressure, just a conversation.</p>
+        </div>
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="label">Email</span>
+            <span class="value"><span id="email-text" data-fill="email">opahcollins@gmail.com</span><button class="copy" type="button" data-copy="email-text">Copy</button></span>
+          </div>
+          <div class="contact-item">
+            <span class="label">WhatsApp</span>
+            <span class="value"><a id="wa-link" href="https://wa.me/08023578578" target="_blank" rel="noopener">Chat on WhatsApp →</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <form id="contact-form">
+          <div class="field-row">
+            <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-email">Your email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="field">
+            <label for="f-type">What do you need?</label>
+            <select id="f-type" name="type">
+              <option>A business website</option>
+              <option>An online store</option>
+              <option>A portfolio or landing page</option>
+              <option>A redesign of my current site</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field"><label for="f-msg">About your project</label><textarea id="f-msg" name="message" required placeholder="What does your business do, and what should the website help you achieve?"></textarea></div>
+          <button class="btn" type="submit">Prepare my message <span class="arrow">→</span></button>
+        </form>
+
+        <div class="result" id="result" hidden>
+          <h3>Your message is ready.</h3>
+          <p>Copy it, or send it using one of the options below.</p>
+          <textarea id="result-text" readonly rows="7"></textarea>
+          <div class="result-actions">
+            <button class="btn small" type="button" id="copy-result">Copy message</button>
+            <a class="btn small ghost" id="mail-link" href="#">Open in email app</a>
+            <a class="btn small ghost" id="wa-send" href="#" target="_blank" rel="noopener">Send on WhatsApp</a>
+            <button class="btn small ghost" type="button" id="edit-again">Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>© <span id="year">2026</span> <span data-fill="name">Your Name</span>. All rights reserved.</span>
+  <span>Built with HTML, CSS and JavaScript.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
